@@ -1,0 +1,18 @@
+body {
+    background-image: url("../images/stardust.png");
+}
+
+.navbar {
+    background-image: url("../images/carbonfiber.png");
+}
+
+h3,h4,p,li,label,address {
+    color: #E6E6E6;
+}
+.answer-pot {
+    padding:10px;
+    border: 2px solid white;
+    border-radius: 10x;
+    background-color: #AAAAAA;
+    margin: 5px;
+}
