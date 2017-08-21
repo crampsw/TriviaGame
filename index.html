@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Wes Crampton</title>
+    <title>Trivia Game</title>
 
     <meta name="description" content="Trivia Game">
     <meta name="author" content="Wes Crampton">
@@ -44,20 +44,24 @@
         <div class="row justify-content-center">
             <div id="main-game" class="col">
                 <div class="jumbotron game-header text-center" style="margin-top:100px; font-size:300%;"> Trivia Game! </div>
-                <p class="time-holder text-center"> You have <button class="time-count">TIME </button> seconds left </p>
+                <p class="time-holder text-center"> You have <button id="time-count">TIME </button> seconds left </p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <p id="question-holder"> </p>
+                <p id="question-holder" class="text-center"> </p>
             </div>
         </div>
-        <div class="row">
-            <button id="answer-0" class="col text-center answer-pot" value="0">col</button>
-            <button id="answer-1" class="col text-center answer-pot" value="1">col</button>
+        <div class="row justify-content-center">
+            <button id="answer-holder" class="btn btn-default"> </button>
+            <button id="answer-0" class="col btn btn-default answer-pot" value="0">col</button>
+            <button id="answer-1" class="col btn btn-default answer-pot" value="1">col</button>
             <div class="w-100"></div>
-            <button id="answer-2" class="col text-center answer-pot" value="2">col</button>
-            <button id="answer-3" class="col text-center answer-pot" value="3">col</button>
+            <button id="answer-2" class="col btn btn-default answer-pot" value="2">col</button>
+            <button id="answer-3" class="col btn btn-default answer-pot" value="3">col</button>
+        </div>
+        <div class="row">
+            
         </div>
     </div>
 
