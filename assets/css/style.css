@@ -16,3 +16,7 @@ h3,h4,p,li,label,address {
     background-color: #AAAAAA;
     margin: 5px;
 }
+.multi-line-button {
+    white-space: normal;
+    word-wrap: normal;
+    }
