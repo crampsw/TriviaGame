@@ -1,3 +1,37 @@
+var intervalId;
+
+var timer = {
+  time: 0,
+  total: 0,
+  reset: function(startTime) {
+    timer.time = startTime;
+    $("#time-count").text(timer.timeConverter(timer.time))
+  },
+  start: function() {
+        intervalId =  setInterval(timer.count, 1000);
+  },
+  count: function() {
+    timer.time--;
+    timer.total++;
+    $("#timecount").text(timer.timeConverter(timer.time));
+  },
+  timeConverter: function(t) {
+    var minutes = Math.floor(t / 60);
+    var seconds = t - (minutes * 60);
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    }
+    if (minutes === 0) {
+      minutes = "00";
+    }
+    else if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    return minutes + ":" + seconds;
+},
+}
+
+
 var trivia = {
 
     rightAnswers: 0, //These three track the scores
@@ -38,7 +72,8 @@ var trivia = {
     cycle: function() {
         this.questionNumber++;
         this.updateQuestions();
-
+        timer.reset(30);
+        timer.start();
     },
 
     answerDisplay: function() {
