@@ -13,7 +13,7 @@ var timer = {
   count: function() {
     timer.time--;
     timer.total++;
-    $("#timecount").text(timer.timeConverter(timer.time));
+    $("#time-count").text(timer.timeConverter(timer.time));
   },
   timeConverter: function(t) {
     var minutes = Math.floor(t / 60);
